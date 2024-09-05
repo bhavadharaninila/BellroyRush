@@ -20,3 +20,7 @@ A fun, interactive robot game where players navigate a robot to collect randomly
 - If were successfull a "yess!" message pops.
 - the robot rotates itself towards the direction it moves.
 
+##Highlights
+- I’ve turned the original robot simulation project into an engaging game experience with a fun twist and a clear purpose, making it not only more enjoyable but also a compelling example of interactive design.
+- I have turned the robot to an Owl to symbolize Bellroy.
+- an Owl moves in search of a Bellroy bag!
