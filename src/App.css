@@ -1,0 +1,102 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.start-screen h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.start-screen button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+
+.grid-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(5, 50px);
+}
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.controls {
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px; 
+  height: 150px; 
+}
+
+.control-btn {
+  position: absolute;
+}
+
+.control-btn.up {
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.control-btn.down {
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.control-btn.left {
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.control-btn.right {
+  right: 10%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.icon {
+  font-size: 2em;
+}
+.message {
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 10;
+}
+
+.show-message {
+  opacity: 1;
+}
